@@ -163,6 +163,12 @@ button:hover{
 	transform: scale(.6);
 }
 
+.para{
+   text-align: center;
+   color: black;
+   padding-top: 20px;
+}
+
 #chk:checked ~ .login{
 	transform: translateY(-500px);
 }
