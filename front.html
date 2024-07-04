@@ -1,56 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/lays/ass/lays-logo.png">
     <title>Lays</title>
     <link rel="stylesheet" href="style_front.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-   <div class="hero">
+    <div class="hero">
 
 
-    <!-- <div class="login-main">
-        <input type="checkbox" id="chk" aria-hidden="true">
-        <div class="signup">
-            <form action="">
-                <label for="chk" aria-hidden="true">Sign Up</label>
-                <input type="text" name="txt" placeholder="User name" required="">
-                <input type="email" name="email" placeholder="Email" required="">
-                <input type="password" name="pswd" placeholder="Password" required="">
-                <button>Sign Up</button>
-            </form>
-            <p class="para">Have an account? <i class="fa-solid fa-arrow-down"></i></p>
+        <div class="login-main hide">
+            <i class="fa-solid fa-xmark cross"></i>
+            <input type="checkbox" id="chk" aria-hidden="true">
+            <div class="signup">
+                <form action="">
+                    <label for="chk" aria-hidden="true">Sign Up</label>
+                    <input type="text" name="txt" placeholder="User name" required="">
+                    <input type="email" name="email" placeholder="Email" required="">
+                    <input type="password" name="pswd" placeholder="Password" required="">
+                    <button>Sign Up</button>
+                </form>
+                <p class="para">Have an account? <i class="fa-solid fa-arrow-down"></i></p>
+            </div>
+
+            <div class="login">
+                <form action="">
+                    <label for="chk" aria-hidden="true">Login</label>
+                    <input type="email" name="email" placeholder="Email" required="">
+                    <input type="password" name="pswd" placeholder="Password" required="">
+                    <button>Login</button>
+                </form>
+            </div>
         </div>
-    
-        <div class="login">
-            <form action="">
-                <label for="chk" aria-hidden="true">Login</label>
-                <input type="email" name="email" placeholder="Email" required="">
-                <input type="password" name="pswd" placeholder="Password" required="">
-                <button>Login</button>
-            </form>
-        </div>
-    </div>
 
-    -->
 
-    <video autoplay loop muted plays-inline class="back-video">
-        <source src="/lays/ass/lays-add-new.mp4" type="video/mp4">
-    </video>
+
+        <video autoplay loop muted plays-inline class="back-video ">
+            <source src="/lays/ass/lays-add-new.mp4" type="video/mp4">
+        </video>
 
         <nav>
             <img src="/lays/ass/lays-logo.png" class="logo">
             <ul>
-                <li><a href="#">About Us</a></li>
+                <li><a href="#" class="about">About Us</a></li>
             </ul>
+
         </nav>
         <div class="content">
             <h1>Lays</h1>
-            <a href="#">Sign Up</a>
+            <a href="#" id="btn">Sign Up</a>
         </div>
-   </div>
+    </div>
+    <!-- done by jeet -->
+    <div class="credits" id="hide">
+        <ul>
+            <li>JEET MANDAL </li>
+            <li>SOURIN CHATERJEE</li>
+            <li>KOUSIK DAS</li>
+        </ul>
+    </div>
 </body>
+<script src="app.js"></script>
+
 </html>
