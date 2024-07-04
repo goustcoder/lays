@@ -2,26 +2,28 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fee600; 
+    background-color: #fee600;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fbb515; 
+    background-color: #fbb515;
     color: white;
     padding: 10px 20px;
 }
 
-.logo img{
+.logo img {
     height: 60px;
 }
 
 nav {
-    flex: 1; /* Allow nav to take up available space */
+    flex: 1;
+    /* Allow nav to take up available space */
     display: flex;
-    justify-content: center; /* Center the ul inside the nav */
+    justify-content: center;
+    /* Center the ul inside the nav */
 }
 
 nav ul {
@@ -30,7 +32,7 @@ nav ul {
     padding: 0;
     display: flex;
     gap: 20px;
-    
+
 }
 
 nav ul li a {
@@ -42,12 +44,12 @@ nav ul li a {
 
 nav ul li a:hover {
     border-radius: 50px;
-    background-color: #da281c; 
+    background-color: #da281c;
 }
 
 .hero {
     width: 100%;
-    height: 715px; 
+    height: 715px;
     overflow: hidden;
     position: relative;
 }
@@ -72,14 +74,14 @@ nav ul li a:hover {
     display: none;
 }
 
-.slider input:checked + .slide {
+.slider input:checked+.slide {
     opacity: 1;
 }
 
 .slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 .controls {
@@ -99,34 +101,34 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-.slider input#slide1:checked ~ .slides {
+.slider input#slide1:checked~.slides {
     transform: translateX(0%);
 }
 
-.slider input#slide2:checked ~ .slides {
+.slider input#slide2:checked~.slides {
     transform: translateX(-100%);
 }
 
-.slider input#slide3:checked ~ .slides {
+.slider input#slide3:checked~.slides {
     transform: translateX(-200%);
 }
 
-.slider input#slide1:checked ~ .controls label[for="slide1"],
-.slider input#slide2:checked ~ .controls label[for="slide2"],
-.slider input#slide3:checked ~ .controls label[for="slide3"] {
+.slider input#slide1:checked~.controls label[for="slide1"],
+.slider input#slide2:checked~.controls label[for="slide2"],
+.slider input#slide3:checked~.controls label[for="slide3"] {
     background-color: rgb(189, 0, 0);
 }
 
 .category {
     padding: 20px;
-    margin: 20px 0; 
+    margin: 20px 0;
 }
 
 .category h2 {
     margin: 0 0 20px 0;
-    background-color: #fbb515; 
+    background-color: #fbb515;
     padding: 10px;
-    text-align: left; 
+    text-align: left;
 }
 
 .card-container {
@@ -146,7 +148,7 @@ nav ul li a:hover {
 .card img {
     width: 337px;
     height: 337px;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 .card p {
@@ -154,13 +156,13 @@ nav ul li a:hover {
 }
 
 .card button {
-    background-color: #da281c; 
+    background-color: #da281c;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     margin-top: 10px;
-    border-radius: 50px; 
+    border-radius: 50px;
 }
 
 footer {
@@ -174,6 +176,7 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
 }
-.card button:hover{
+
+.card button:hover {
     background-color: #fee600;
 }
