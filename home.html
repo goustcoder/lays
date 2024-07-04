@@ -3,18 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lays</title>
-    <link rel="stylesheet" herf="style.css">
+    <title>Lays</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.lays.com/sites/lays.com/themes/lays/img/favicons/favicon-16x16.png">
 </head>
 <body>
-
-    <!-- HI KOUSIK YOU HAVE TO DEVELOP THE HOME PAGE PLZ LINK THE CSS PAGE AND FOR USING JAVA SCRIPT USE SCRIPT TAG IN HTML OK. -->
+    <header>
+        <div class="logo"><img src="https://www.lays.com/sites/lays.com/themes/lays/img/logo-lays.png?v=2" alt="img"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            
+            <div class="slides">
+                <div class="slide" id="s1">
+                    <img src="https://www.lays.com/sites/lays.com/files/2024-05/24%20Sweet%20Spicy%20honey%20Desktop%201970x715%20%281%29%20copia.jpg" alt="Image 1">
+                </div>
+                <div class="slide" id="s2">
+                    <img src="https://www.lays.com/sites/lays.com/files/2024-07/LAY%20A-1%20BannerLeaguesCup_2024_%281920x715%29%20Lays%20copia.jpg" alt="Image 2">
+                </div>
+                <div class="slide" id="s3">
+                    <img src="https://www.lays.com/sites/lays.com/files/2024-03/1920x715%20%281%29%20%281%29.png" alt="Image 3">
+                </div>
+            </div>
+            
+            <div class="controls">
+                <label for="slide1" class="control"></label>
+                <label for="slide2" class="control"></label>
+                <label for="slide3" class="control"></label>
+            </div>
+        </div>
+    </section>
+    <section class="category">
+        <h2>Lays</h2>
+        <div class="card-container">
+            <div class="card" id="l1">
+                <img src="https://www.lays.com/sites/lays.com/files/styles/product_thumbnail/public/2020-11/lays-Classic-small.jpg?itok=wq-lfNd6" alt="Product 1">
+                <p>LAY'S® Classic Potato Chips</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card" id="l2">
+                <img src="https://www.lays.com/sites/lays.com/files/styles/product_thumbnail/public/2020-11/lays-bbq.jpg?itok=u27sQU-l" alt="Product 2">
+                <p>LAY'S® BBQ Flavored Potato Chips</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card" id="l3">
+                <img src="https://www.lays.com/sites/lays.com/files/styles/product_thumbnail/public/2020-11/sour-cream.jpg?itok=uNfw9k9G" alt="Product 3">
+                <p>LAY'S® Sour Cream & Onion Flavored Potato Chips</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card" id="l4">
+                <img src="https://www.lays.com/sites/lays.com/files/styles/product_thumbnail/public/2020-11/Chedda-SC.jpg?itok=OQxtDMiN" alt="Product 4">
+                <p>LAY'S® Cheddar & Sour Cream Flavored Potato Chips</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card" id="l5">
+                <img src="https://www.lays.com/sites/lays.com/files/styles/product_thumbnail/public/2022-05/XL%20Lays%20Flamin%20Hot%20New.png?itok=tChFbSyj" alt="Product 5">
+                <p>LAY'S® Flamin' Hot Flavored Potato Chips</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card" id="l6">
+                <img src="https://www.lays.com/sites/lays.com/files/styles/product_thumbnail/public/2024-05/lays-ssh-2024%202.jpg?itok=ANhP-2-s" alt="Product 5">
+                <p>LAY’S® Sweet & Spicy Honey Potato Chips</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card" id="l7">
+                <img src="https://www.lays.com/sites/lays.com/files/styles/product_thumbnail/public/2019-09/S%26V.png?itok=LXPJTLXJ" alt="Product 1">
+                <p>LAY'S® Salt & Vinegar Flavored Potato Chips</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card" id="l8">
+                <img src="https://www.lays.com/sites/lays.com/files/styles/product_thumbnail/public/2020-11/Cheddar-Jalapeno_0.jpg?itok=HogfnWnA" alt="Product 2">
+                <p>LAY'S® Cheddar Jalapeño Flavored Potato Chips</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card" id="l9">
+                <img src="https://www.lays.com/sites/lays.com/files/styles/product_thumbnail/public/2021-07/XL%20Lay%27s%20Sweet%20Southern%20Heat%20BBQ.png?itok=c8v-PEpW" alt="Product 3">
+                <p>LAY'S® Sweet Southern Heat BBQ Flavored Potato Chips</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card" id="l10">
+                <img src="https://www.lays.com/sites/lays.com/files/styles/product_thumbnail/public/2019-09/HBBQ.png?itok=WBR-De-o" alt="Product 4">
+                <p>LAY'S® Honey BBQ Flavored Potato Chips</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://www.lays.com/sites/lays.com/files/styles/product_thumbnail/public/2022-02/XL%20Lay%27s%20Chile%20Limon_2.png?itok=LDu2o4LR" alt="Product 5">
+                <p>LAY'S® Chile Limón Flavored Potato Chips</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://www.lays.com/sites/lays.com/files/styles/product_thumbnail/public/2022-02/LIMON_2.png?itok=WTNl7ibq" alt="Product 5">
+                <p>LAY'S® Limón Flavored Potato Chips</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://www.lays.com/sites/lays.com/files/styles/product_thumbnail/public/2024-02/Dill%20Pickle%5B2%5D.png?itok=AlwgKesn" alt="Product 1">
+                <p>LAY'S® Dill Pickle Flavored Potato Chips</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://www.lays.com/sites/lays.com/files/styles/product_thumbnail/public/2021-07/XL%20Lay%27s%20Flamin%20Hot%20Dill%20Pickle.png?itok=WZFf6twi" alt="Product 2">
+                <p>LAY'S® Flamin' Hot Dill Pickle Flavored Potato Chips</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://www.lays.com/sites/lays.com/files/styles/product_thumbnail/public/2019-09/Chesapeake%20Bay%20Crab%20Spice.png?itok=bHa9_Ps2" alt="Product 3">
+                <p>LAY'S® Chesapeake Bay Crab Spice Flavored Potato Chips</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://www.lays.com/sites/lays.com/files/styles/product_thumbnail/public/2022-02/Adobadas%20%283%29.png?itok=QWApt34e" alt="Product 4">
+                <p>SABRITAS® Adobadas Flavored Potato Chips</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <section class="category">
+        <h2>Lays Better For You</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://www.lays.com/sites/lays.com/files/styles/product_thumbnail/public/2022-02/Adobadas%20%283%29.png?itok=QWApt34e" alt="Product 6">
+                <p>Product 1 Description</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://www.lays.com/sites/lays.com/files/styles/product_thumbnail/public/2022-02/Adobadas%20%283%29.png?itok=QWApt34e" alt="Product 7">
+                <p>Product 1 Description</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://www.lays.com/sites/lays.com/files/styles/product_thumbnail/public/2022-02/Adobadas%20%283%29.png?itok=QWApt34e" alt="Product 8">
+                <p>Product 1 Description</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://www.lays.com/sites/lays.com/files/styles/product_thumbnail/public/2022-02/Adobadas%20%283%29.png?itok=QWApt34e" alt="Product 9">
+                <p>Product 1 Description</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://www.lays.com/sites/lays.com/files/styles/product_thumbnail/public/2022-02/Adobadas%20%283%29.png?itok=QWApt34e" alt="Product 10">
+                <p>Product 1 Description</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Lays. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
-<script>
-
-
-//THIS IS YOUR SCRIPT TAG
-
-
-</script>
 </html>

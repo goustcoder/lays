@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fee600; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fbb515; 
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo img{
+    height: 60px;
+}
+
+nav {
+    flex: 1; /* Allow nav to take up available space */
+    display: flex;
+    justify-content: center; /* Center the ul inside the nav */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: 1000;
+}
+
+nav ul li a:hover {
+    border-radius: 50px;
+    background-color: #da281c; 
+}
+
+.hero {
+    width: 100%;
+    height: 715px; 
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s;
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider input:checked + .slide {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.controls .control {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider input#slide1:checked ~ .slides {
+    transform: translateX(0%);
+}
+
+.slider input#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+.slider input#slide3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+.slider input#slide1:checked ~ .controls label[for="slide1"],
+.slider input#slide2:checked ~ .controls label[for="slide2"],
+.slider input#slide3:checked ~ .controls label[for="slide3"] {
+    background-color: rgb(189, 0, 0);
+}
+
+.category {
+    padding: 20px;
+    margin: 20px 0; 
+}
+
+.category h2 {
+    margin: 0 0 20px 0;
+    background-color: #fbb515; 
+    padding: 10px;
+    text-align: left; 
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    background-color: #fbb515;
+    padding: 10px;
+}
+
+.card {
+    background-color: #fee600;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.card img {
+    width: 337px;
+    height: 337px;
+    object-fit: cover; 
+}
+
+.card p {
+    margin: 10px 0;
+}
+
+.card button {
+    background-color: #da281c; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 50px; 
+}
+
+footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.card button:hover{
+    background-color: #fee600;
+}
