@@ -16,6 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: auto;
 }
 
 nav {
@@ -276,4 +277,82 @@ button:hover {
 .blurred {
     filter: blur(10px);
     transition: filter 0.3s ease;
+}
+
+/* Lays element */
+.lays-elements{
+    height: 500px;
+    width: 100%;
+    background-color: #007BFF;
+    margin: 10px 0 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    color: #fff;
+}
+.spice{
+    background: rgb(222,106,33);
+    background: linear-gradient(94deg, rgba(222,106,33,1) 35%, rgba(255,255,255,1) 88%);
+}
+.voi{
+    background: rgb(255,255,255);
+    background: linear-gradient(94deg, rgba(255,255,255,1) 27%, rgba(111,47,125,1) 74%);
+}
+.bbq{
+    background: rgb(7,8,10);
+    background: linear-gradient(94deg, rgba(7,8,10,1) 28%, rgba(255,255,255,1) 74%);
+}
+.black{
+    background: rgb(255,255,255);
+    background: linear-gradient(94deg, rgba(255,255,255,1) 27%, rgba(191,31,36,1) 74%);
+}
+
+.varity{
+    background: rgb(255,204,0);
+    background: linear-gradient(94deg, rgba(255,204,0,1) 28%, rgba(255,255,255,1) 74%);
+}
+
+.bbq .img img{
+    height: 440px;
+}
+.bbq .img img:hover{
+    height: 510px;
+}
+.black .img img{
+    height: 400px;
+}
+.black .img img:hover{
+    height: 470px;
+}
+.desc{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.desc h1{
+    font-size:2.9rem;
+    padding-bottom: 1.5rem;
+}
+.desc p{
+    font-size: 1.4rem;
+}
+.img{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.img img{
+    height: 350px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.img img:hover{
+    height: 410px;
 }
