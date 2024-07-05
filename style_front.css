@@ -36,10 +36,15 @@ nav {
 
 nav ul li {
     list-style: none;
-    display: inline-block;
-    margin-left: 40px;
+    
 }
-
+nav ul div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 9rem;
+}
 nav ul li a {
     /* position: absolute; */
     /* right: 300px;
@@ -47,18 +52,23 @@ nav ul li a {
     text-decoration: none;
     color: #f9f9f9;
     font-size: 17px;
-    padding: 20px;
+    padding: 15px;
     /* color: blue; */
     text-decoration: none;
     transition: color 0.3s ease, font-size 0.3s ease;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
     /* text-decoration: underline;  ** sourin i dont want underline when i hover the about us ** */
-
+    background: #fc913a;
     color: white;
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 20px;
+}
+
+nav ul li a:active{
+    background-color: #f47c1a;
 }
 
 .content {
@@ -291,6 +301,7 @@ button:hover {
     padding: 3rem;
     color: #fff;
 }
+/* lays background color */
 .spice{
     background: rgb(222,106,33);
     background: linear-gradient(94deg, rgba(222,106,33,1) 35%, rgba(255,255,255,1) 88%);
@@ -312,7 +323,7 @@ button:hover {
     background: rgb(255,204,0);
     background: linear-gradient(94deg, rgba(255,204,0,1) 28%, rgba(255,255,255,1) 74%);
 }
-
+/* hover eff */
 .bbq .img img{
     height: 440px;
 }
@@ -325,6 +336,7 @@ button:hover {
 .black .img img:hover{
     height: 470px;
 }
+/* div size */
 .desc{
     height: 100%;
     width: 50%;
