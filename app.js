@@ -1,5 +1,5 @@
 const btn = document.querySelector("#btn");
-const form = document.querySelector(".login-main");
+ const form = document.querySelector(".login-main");
 const cross = document.querySelector(".cross");
 const about = document.querySelector(".about");
 const credit = document.querySelector(".credits");
