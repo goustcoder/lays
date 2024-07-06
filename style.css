@@ -1,9 +1,16 @@
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     background-color: #fee600;
+=======
+    background-color: #fee600; 
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+>>>>>>> 209ace9bdafac224d907b6c10a9e06a628eabf48
 }
+
 /* Header Styles */
 header {
     display: flex; 
@@ -17,6 +24,7 @@ header {
 .logo img {
     height: 60px;
 }
+
 /* Nav bar Center */
 nav {
     flex: 1; /* Allow nav to take up available space */
@@ -30,7 +38,10 @@ nav ul {
     padding: 0;
     display: flex;
     gap: 20px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 209ace9bdafac224d907b6c10a9e06a628eabf48
 }
 
 nav ul li a {
@@ -39,11 +50,13 @@ nav ul li a {
     padding: 10px 15px;
     font-weight: 1000;
 }
+
 /* Nav bar button on hover */
 nav ul li a:hover {
     border-radius: 50px;
     background-color: #da281c;
 }
+
 /* Hero section */
 .hero {
     width: 100%;
@@ -107,7 +120,11 @@ nav ul li a:hover {
     transform: translateX(-100%);
 }
 
+<<<<<<< HEAD
 .slider input#slide3:checked~.slides {
+=======
+slider input#slide3:checked ~ .slides {
+>>>>>>> 209ace9bdafac224d907b6c10a9e06a628eabf48
     transform: translateX(-200%);
 }
 
@@ -119,7 +136,13 @@ nav ul li a:hover {
 
 .category {
     padding: 20px;
+<<<<<<< HEAD
     margin: 20px 0;
+=======
+    margin: 20px 0; 
+    max-width: 100%; 
+    overflow-x: hidden; 
+>>>>>>> 209ace9bdafac224d907b6c10a9e06a628eabf48
 }
 
 .category h2 {
@@ -135,34 +158,68 @@ nav ul li a:hover {
     gap: 10px;
     background-color: #fbb515;
     padding: 10px;
+    max-width: 100%; 
+    overflow-x: hidden; 
 }
-
+/* Individual card styles */
 .card {
     background-color: #fee600;
     text-align: center;
-    padding-top: 10px;
+    margin-bottom: 20px;
 }
-/* Banner sizd */
+
 .card img {
-    width: 337px;
+    width: 100%;
+    max-width: 337px;
     height: 337px;
+<<<<<<< HEAD
     object-fit: cover;
+=======
+    object-fit: cover; 
+    transition: .5s;
+    margin: 0 auto; 
+    margin-top: 10px;
+}
+/* Card content styles */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+>>>>>>> 209ace9bdafac224d907b6c10a9e06a628eabf48
 }
 
-.card p {
+.card-content p {
     margin: 10px 0;
+    font-weight: 1000;
+    color: white;
+    font-size: 22px;
 }
 
+<<<<<<< HEAD
 .card button {
     background-color: #da281c;
+=======
+.card-content button {
+    background-color: #da281c; 
+>>>>>>> 209ace9bdafac224d907b6c10a9e06a628eabf48
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+<<<<<<< HEAD
     margin-top: 10px;
     border-radius: 50px;
+=======
+    margin: 10px;
+    border-radius: 50px; 
+>>>>>>> 209ace9bdafac224d907b6c10a9e06a628eabf48
+}
+#l1 button{
+    margin-top: 35px;
 }
 
+/* Footer styles */
 footer {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
@@ -177,4 +234,8 @@ footer {
 
 .card button:hover {
     background-color: #fee600;
+}
+
+.card:hover img {
+    transform: scale(1.09);
 }
