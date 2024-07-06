@@ -1,7 +1,7 @@
 # lays
 This is a lays website
 # for changing branch 
-git cheackout "branch name"
+git checkout "branch name"
 #for add
 git add .
 git commit -m"message"
