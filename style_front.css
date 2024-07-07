@@ -82,6 +82,7 @@ nav ul li a:active{
     color: #fff;
     font-weight: 600;
     cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .content a {
