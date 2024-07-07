@@ -24,45 +24,28 @@
         </nav>
     </header>
     <!-- Hero Section with a slider -->
-    <section class="hero">
-        <div class="slider">
-            <input type="radio" name="slider" id="slide1" checked>
-            <input type="radio" name="slider" id="slide2">
-            <input type="radio" name="slider" id="slide3">
-            <input type="radio" name="slider" id="slide4">
-
-            <div class="slides">
-                <!-- Each slide in the slider -->
-                <div class="slide" id="s1">
-                    <img src="https://ideogram.ai/assets/image/lossless/response/dOFsQpT8SyeJzQG0RDiKpg"
-                        alt="Image 1">
-                </div>
-                <div class="slide" id="s2">
-                    <img src="https://ideogram.ai/assets/image/lossless/response/zPda0YZEQsy7Spv6Pyyh1w"
-                        alt="Image 2">
-                </div>
-                <div class="slide" id="s3">
-                    <img src="https://ideogram.ai/assets/image/lossless/response/oVyHJu4NRridmwn8vxVhKA"
-                        alt="Image 3">
-                </div>
-            </div>
-            <div class="slide" id="s4">
-                <img src="https://ideogram.ai/assets/image/lossless/response/dOFsQpT8SyeJzQG0RDiKpg"
-                    alt="Image 4">
-            </div>
-        </div>
-            
-
-            <div class="controls">
-                 <!-- Control buttons for the slider -->
-                <label for="slide1" class="control"></label>
-                <label for="slide2" class="control"></label>
-                <label for="slide3" class="control"></label>
-                <label for="slide4" class="control"></label>
-            </div>
-        </div>
-    </section>
+    
     <!-- Category section displaying products -->
+<!-- hero section -->
+<div class="slider">
+    <img src="https://ideogram.ai/assets/image/lossless/response/dOFsQpT8SyeJzQG0RDiKpg" alt="" class="slide">
+    <img src="https://ideogram.ai/assets/image/lossless/response/zPda0YZEQsy7Spv6Pyyh1w" alt="" class="slide">
+    <img src="https://ideogram.ai/assets/progressive-image/balanced/response/cCn-sG7LTXqmt-vm31EVOg" alt="" class="slide">
+  </div>
+  <button class="pre g">
+      <i class="fa-solid fa-angle-left"></i>
+  </button>
+  <button class="post g">
+      <i class="fa-solid fa-angle-right"></i>
+  </button>
+  </div> 
+
+
+
+
+
+
+
     <section class="category">
         <h2>Lays</h2>
         <div class="card-container">
@@ -212,6 +195,41 @@
             <p>&copy; 2024 Gays. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script>
+        const slides = document.querySelectorAll(".slide");
+    const pre=document.querySelector(".pre");
+    const post=document.querySelector(".post");
+    let counter =0;
+    slides.forEach((slide,index)=>{
+      slide.style.left=`${index *100}%`;
+    })
+    pre.addEventListener("click",()=>{
+        counter--;
+        slideImage();
+        console.log("clicked",counter);
+    })
+    post.addEventListener("click",()=>{
+        counter++;
+        slideImage();
+        console.log("clicked");
+        console.log("clicked",counter);
+    })
+     const slideImage=()=>{
+        slides.forEach((slide)=>{
+            if(counter>=3){
+                counter=0;
+            }else if(counter<0){
+              counter=2;
+            }
+            slide.style. transform=`translateX(-${counter*100}%)`
+        })
+     }
+     window.setInterval(()=>{
+        counter++;
+      slideImage()
+     },3000);
+    </script>   
 </body>
 
 </html>
