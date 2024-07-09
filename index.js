@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const path = require('path');
 const mongoose = require('mongoose');
+
 app.use(express.urlencoded({extended:true}));
 app.set("view engine","ejs");
 app.set("views",path.join(__dirname,"views"));
@@ -31,8 +32,20 @@ app.listen(port,()=>{
   
 })
 
-app.get('/',async (req,res)=>{
+app.get('/', (req,res)=>{
 res.render("front.ejs");
-const data= await Product.find({});
-  console.log(data);
+
 })
+
+app.post('/home', async(req,res)=>{
+  const data=req.body;
+
+   const products= await Product.find({});
+ 
+  res.render("home.ejs",{data,products});
+  
+  })
+
+  app.get('/cart',(req,res)=>{
+    res.render("cart.ejs");
+  })
