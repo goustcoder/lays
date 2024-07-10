@@ -171,8 +171,13 @@ nav ul li a:hover {
     align-self: center;
 }
 .card div{
-    height: 337px;
+    height: 350px;
     width: 100%;
+}
+.card .paragraph{
+    height: 43.5px;
+    width: 100%;
+    background: transparent;
 }
 
 .yellow{
@@ -302,7 +307,7 @@ nav ul li a:hover {
 
 /* doritos style */
 .doritos-red div{
-    background-image: url(/lays/ass/solid-black.jpg);
+    background-color: black;
      background-position: center;
      background-size: cover;
      display: flex;
@@ -322,7 +327,7 @@ nav ul li a:hover {
 }
 
 .doritos-bbq div{
-    background-image: url(/lays/ass/solid-black.jpg);
+    background-color: black;
      background-position: center;
      background-size: cover;
      display: flex;
@@ -342,7 +347,7 @@ nav ul li a:hover {
 }
 
 .doritos-blue div{
-    background-image: url(/lays/ass/solid-black.jpg);
+    background-color: black;   
      background-position: center;
      background-size: cover;
      display: flex;
@@ -362,7 +367,7 @@ nav ul li a:hover {
 }
 
 .doritos-green div{
-    background-image: url(/lays/ass/solid-black.jpg);
+    background-color: black;
      background-position: center;
      background-size: cover;
      display: flex;
@@ -382,7 +387,7 @@ nav ul li a:hover {
 }
 
 .doritos-spicy div{
-    background-image: url(/lays/ass/solid-black.jpg);
+    background-color: black;
      background-position: center;
      background-size: cover;
      display: flex;
@@ -402,7 +407,7 @@ nav ul li a:hover {
 }
 
 .doritos-chili div{
-    background-image: url(/lays/ass/solid-black.jpg);
+    background-color: black;
      background-position: center;
      background-size: cover;
      display: flex;
@@ -421,8 +426,132 @@ nav ul li a:hover {
   width: auto;
 }
 
+/* pringles style */
+.pringles-red div{
+    background-color: #fff;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     
+ }
 
+ .pringles-red{
+     background-color: #f2494c;
+ }
 
+.pringles-red div img{
+  max-height: 300px;
+  max-width: 300px;
+  height: auto;
+  width: auto;
+}
+
+.pringles-bbq div{
+    background-color: #fff;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     
+ }
+
+ .pringles-bbq{
+     background-color: #701036;
+ }
+
+.pringles-bbq div img{
+  max-height: 300px;
+  max-width: 300px;
+  height: auto;
+  width: auto;
+}
+
+.pringles-green div{
+    background-color: #fff;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     
+ }
+
+ .pringles-green{
+     background-color: #42a33b;
+ }
+
+.pringles-green div img{
+  max-height: 300px;
+  max-width: 300px;
+  height: auto;
+  width: auto;
+}
+
+.pringles-sky div{
+    background-color: #fff;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     
+ }
+
+ .pringles-sky{
+     background-color: #11b3d4;
+ }
+
+.pringles-sky div img{
+  max-height: 300px;
+  max-width: 300px;
+  height: auto;
+  width: auto;
+}
+
+.pringles-white div{
+    background-color: #fff;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     
+ }
+
+ .pringles-white{
+     background-color: #979797;
+ }
+
+.pringles-white div img{
+  max-height: 300px;
+  max-width: 300px;
+  height: auto;
+  width: auto;
+}
+
+.pringles-yellow div{
+    background-color: #fff;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     
+ }
+
+ .pringles-yellow{
+     background-color: #f29500;
+ }
+
+.pringles-yellow div img{
+  max-height: 300px;
+  max-width: 300px;
+  height: auto;
+  width: auto;
+}
 /* Footer styles */
 footer {
     background-color: #ffffff;
