@@ -88,8 +88,8 @@ nav ul li a:hover {
     width: 95%;
     height: 600px;
     position: relative;
-   top:35px;
-   left:35px;
+    top:35px;
+    left:35px;
     overflow: hidden;
     
 
@@ -157,6 +157,7 @@ nav ul li a:hover {
     flex-direction: column;
     height: 520px;
     min-width: 300px;
+    cursor: pointer;
 
 }
 
@@ -221,9 +222,7 @@ nav ul li a:hover {
     color: white;
     font-weight: 550;
 }
-.card a:hover{
-    text-decoration: underline;
-}
+
 
 .card p {
     margin: 0.5rem 0.5rem 0 0.5rem;
@@ -301,6 +300,128 @@ nav ul li a:hover {
      background-color: #cccccc;
  }
 
+/* doritos style */
+.doritos-red div{
+    background-image: url(/lays/ass/solid-black.jpg);
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .doritos-red{
+     background-color: #a30f0f;
+ }
+
+.doritos-red div img{
+  max-height: 280px;
+  max-width: 280px;
+  height: auto;
+  width: auto;
+}
+
+.doritos-bbq div{
+    background-image: url(/lays/ass/solid-black.jpg);
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .doritos-bbq{
+     background-color: #313133;
+ }
+
+.doritos-bbq div img{
+  max-height: 280px;
+  max-width: 280px;
+  height: auto;
+  width: auto;
+}
+
+.doritos-blue div{
+    background-image: url(/lays/ass/solid-black.jpg);
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .doritos-blue{
+     background-color: #274482;
+ }
+
+.doritos-blue div img{
+  max-height: 280px;
+  max-width: 280px;
+  height: auto;
+  width: auto;
+}
+
+.doritos-green div{
+    background-image: url(/lays/ass/solid-black.jpg);
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .doritos-green{
+     background-color: #01733c;
+ }
+
+.doritos-green div img{
+  max-height: 280px;
+  max-width: 280px;
+  height: auto;
+  width: auto;
+}
+
+.doritos-spicy div{
+    background-image: url(/lays/ass/solid-black.jpg);
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .doritos-spicy{
+     background-color: #7a0b30;
+ }
+
+.doritos-spicy div img{
+  max-height: 280px;
+  max-width: 280px;
+  height: auto;
+  width: auto;
+}
+
+.doritos-chili div{
+    background-image: url(/lays/ass/solid-black.jpg);
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .doritos-chili{
+     background-color: #91216e;
+ }
+
+.doritos-chili div img{
+  max-height: 280px;
+  max-width: 280px;
+  height: auto;
+  width: auto;
+}
+
+
 
 /* Footer styles */
 footer {
@@ -324,3 +445,12 @@ footer {
 .card:hover img {
     transform: scale(1.09);
 }
+.card-container::-webkit-scrollbar{
+    width: 15px;
+}
+.card-container::-webkit-scrollbar-track{
+   background: #d1e5d1;
+}
+.card-container::-webkit-scrollbar-thumb{
+    background: #de662a;
+ }
