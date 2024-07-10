@@ -3,10 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" herf="/cart.css">
     <title>Crunchy hub</title>
 </head>
 <body>
-    <h1>welcome to cart</h1>
+    <!-- Header section with logo and navigation -->
+    <header>
+        <div class="logo"><img src="https://i.imgur.com/fVH8fPA.png" referrerpolicy="no-referrer" alt="img"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <div class="box">
+                    <input type="text" placeholder="Search..">
+                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+                <li>
+                    <div class="cart">
+                        <a href="http://localhost:3000/cart"><i class="fa-solid fa-cart-shopping"></i>
+                            <span class="counter hide"></span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="cart profile">
+                        <a href="#"><i class="fa-solid fa-user"></i></a>
+                
+                    </div>
+                </li>
+            </ul>  
+            <p><%=data.email%></p>
+        </nav>
+    </header>
+    <!-- Hero Section with a slider -->
+    
+    <!-- Category section displaying products -->
+<!-- hero section -->
+<div class="slider">
+    <img src="https://ideogram.ai/assets/image/lossless/response/hz2DQXNoQlm9xoSw6snw2A" alt="" class="slide">
+    <img src="https://ideogram.ai/assets/image/lossless/response/WCigYi3tQ4OTy-OyA5Ftow" alt="" class="slide">
+    <img src="https://ideogram.ai/assets/image/lossless/response/dOFsQpT8SyeJzQG0RDiKpg" alt="" class="slide">
+    <img src="https://ideogram.ai/assets/image/lossless/response/zPda0YZEQsy7Spv6Pyyh1w" alt="" class="slide">
+    <img src="https://ideogram.ai/assets/image/lossless/response/KQV2bivqRDKSM26vXnX_Jg" alt="" class="slide">
+    <img src="https://ideogram.ai/assets/progressive-image/balanced/response/cCn-sG7LTXqmt-vm31EVOg" alt="" class="slide">
+    <img src="https://ideogram.ai/assets/progressive-image/balanced/response/UXwg5QPaS5G9JXUzEHb-Ig" alt="" class="slide">
+    
+  </div>
+  <button class="pre g">
+      <i class="fa-solid fa-angle-left"></i>
+  </button>
+  <button class="post g">
+      <i class="fa-solid fa-angle-right"></i>
+  </button>
+  </div> 
+
+
     
 </body>
 </html>
