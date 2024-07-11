@@ -552,6 +552,199 @@ nav ul li a:hover {
   height: auto;
   width: auto;
 }
+
+/* try this out section */
+/* doritos */
+.doritos-new-red div{
+    background-color: black;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .doritos-new-red{
+     background-color: #a30f0f;
+ }
+
+.doritos-new-red div img{
+  max-height: 280px;
+  max-width: 280px;
+  height: auto;
+  width: auto;
+}
+
+.doritos-new-blue div{
+    background-color: black;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .doritos-new-blue{
+     background-color: #0064ab;
+ }
+
+.doritos-new-blue div img{
+  max-height: 280px;
+  max-width: 280px;
+  height: auto;
+  width: auto;
+}
+
+.doritos-new-green div{
+    background-color: black;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .doritos-new-green{
+     background-color: #8fb02c;
+ }
+
+.doritos-new-green div img{
+  max-height: 280px;
+  max-width: 280px;
+  height: auto;
+  width: auto;
+}
+
+/* lays kettle */
+.lays-kettle-red div{
+    background-image: url(/lays/ass/lays-kettle-red.png);
+     background-position: center;
+     background-size: cover;
+ }
+ .lays-kettle-red{
+     background-color: #870914;
+ }
+
+ .lays-kettle-green div{
+    background-image: url(/lays/ass/lays-kettle-green.png);
+     background-position: center;
+     background-size: cover;
+ }
+ .lays-kettle-green{
+     background-color: #74b04f;
+ }
+
+ .lays-kettle-white div{
+    background-image: url(/lays/ass/lays-kettle-white.png);
+     background-position: center;
+     background-size: cover;
+ }
+ .lays-kettle-white{
+     background-color: #a4abb0;
+ }
+
+ /* Ruffles */
+ .ruffles-org div{
+    background-color: #fff;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .ruffles-org{
+     background-color: #f2672c;
+ }
+
+.ruffles-org div img{
+  max-height: 280px;
+  max-width: 280px;
+  height: auto;
+  width: auto;
+}
+
+.ruffles-bbq div{
+    background-color: #fff;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .ruffles-bbq{
+     background-color: #852c00;
+ }
+
+.ruffles-bbq div img{
+  max-height: 280px;
+  max-width: 280px;
+  height: auto;
+  width: auto;
+}
+
+.ruffles-green div{
+    background-color: #fff;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .ruffles-green{
+     background-color: #01421c;
+ }
+
+.ruffles-green div img{
+  max-height: 280px;
+  max-width: 280px;
+  height: auto;
+  width: auto;
+}
+
+/* sunchips */
+.sunchips-orange div{
+    background-color: #fff;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .sunchips-orange{
+     background-color: #d15000;
+ }
+
+.sunchips-orange div img{
+  max-height: 280px;
+  max-width: 280px;
+  height: auto;
+  width: auto;
+}
+
+.sunchips-green div{
+    background-color: #fff;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .sunchips-green{
+     background-color: #638c41;
+ }
+
+.sunchips-green div img{
+  max-height: 280px;
+  max-width: 280px;
+  height: auto;
+  width: auto;
+}
+
 /* Footer styles */
 footer {
     background-color: #ffffff;
