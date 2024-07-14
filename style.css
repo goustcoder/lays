@@ -745,6 +745,250 @@ nav ul li a:hover {
   width: auto;
 }
 
+/* Festive editon */
+.premium-black div{
+    background: linear-gradient(45deg, #000000 0%, #000000 5%,transparent 5%, transparent 10%, #000000 10%, #000000 15%,transparent 15%,transparent 20%, #000000 20%, #000000 25%,transparent 25%,transparent 30%, #000000 30%, #000000 35%,transparent 35%,transparent 40%, #000000 40%, #000000 45%,transparent 45%,transparent 50%, #000000 50%, #000000 55%,transparent 55%,transparent 60%, #000000 60%, #000000 65%,transparent 65%,transparent 70%, #000000 70%, #000000 75%,transparent 70%,transparent 80%, #000000 80%, #000000 85%,transparent 85%,transparent 90%, #000000 90%, #000000 95%,transparent 95%);
+        background-size: 3em 3em;
+        background-color: #ffffff;
+        opacity: 1;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .premium-black{
+     background-color: #454545;
+ }
+
+.premium-black div img{
+  max-height: 280px;
+  max-width: 280px;
+  height: auto;
+  width: auto;
+}
+
+
+.premium-red div{
+    background: linear-gradient(45deg, #611410 0%, #611410 5%,transparent 5%, transparent 10%, #611410 10%, #611410 15%,transparent 15%,transparent 20%, #611410 20%, #611410 25%,transparent 25%,transparent 30%, #611410 30%, #611410 35%,transparent 35%,transparent 40%, #611410 40%, #611410 45%,transparent 45%,transparent 50%, #611410 50%, #611410 55%,transparent 55%,transparent 60%, #611410 60%, #611410 65%,transparent 65%,transparent 70%, #611410 70%, #611410 75%,transparent 70%,transparent 80%, #611410 80%, #611410 85%,transparent 85%,transparent 90%, #611410 90%, #611410 95%,transparent 95%);
+        background-size: 3em 3em;
+        background-color: #ffffff;
+        opacity: 1;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .premium-red{
+     background-color: #96141a;
+ }
+
+.premium-red div img{
+  max-height: 280px;
+  max-width: 280px;
+  height: auto;
+  width: auto;
+}
+
+
+.premium-kfc div{
+    background: linear-gradient(45deg, #ED1E1A 0%, #ED1E1A 5%,transparent 5%, transparent 10%, #ED1E1A 10%, #ED1E1A 15%,transparent 15%,transparent 20%, #ED1E1A 20%, #ED1E1A 25%,transparent 25%,transparent 30%, #ED1E1A 30%, #ED1E1A 35%,transparent 35%,transparent 40%, #ED1E1A 40%, #ED1E1A 45%,transparent 45%,transparent 50%, #ED1E1A 50%, #ED1E1A 55%,transparent 55%,transparent 60%, #ED1E1A 60%, #ED1E1A 65%,transparent 65%,transparent 70%, #ED1E1A 70%, #ED1E1A 75%,transparent 70%,transparent 80%, #ED1E1A 80%, #ED1E1A 85%,transparent 85%,transparent 90%, #ED1E1A 90%, #ED1E1A 95%,transparent 95%);
+        background-size: 3em 3em;
+        background-color: #ffffff;
+        opacity: 1;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .premium-kfc{
+     background-color: #911f09;
+ }
+
+.premium-kfc div img{
+  max-height: 280px;
+  max-width: 280px;
+  height: auto;
+  width: auto;
+}
+
+.premium-doritos div{
+    background: linear-gradient(45deg, #FADF7F 0%, #FADF7F 5%,transparent 5%, transparent 10%, #FADF7F 10%, #FADF7F 15%,transparent 15%,transparent 20%, #FADF7F 20%, #FADF7F 25%,transparent 25%,transparent 30%, #FADF7F 30%, #FADF7F 35%,transparent 35%,transparent 40%, #FADF7F 40%, #FADF7F 45%,transparent 45%,transparent 50%, #FADF7F 50%, #FADF7F 55%,transparent 55%,transparent 60%, #FADF7F 60%, #FADF7F 65%,transparent 65%,transparent 70%, #FADF7F 70%, #FADF7F 75%,transparent 70%,transparent 80%, #FADF7F 80%, #FADF7F 85%,transparent 85%,transparent 90%, #FADF7F 90%, #FADF7F 95%,transparent 95%);
+    background-size: 3em 3em;
+    background-color: #ffffff;
+    opacity: 1;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .premium-doritos{
+     background-color: #cca300;
+ }
+
+.premium-doritos div img{
+  max-height: 280px;
+  max-width: 280px;
+  height: auto;
+  width: auto;
+}
+
+
+.premium-pringles1 div{
+    background: linear-gradient(45deg, #87051B 0%, #87051B 5%,transparent 5%, transparent 10%, #87051B 10%, #87051B 15%,transparent 15%,transparent 20%, #87051B 20%, #87051B 25%,transparent 25%,transparent 30%, #87051B 30%, #87051B 35%,transparent 35%,transparent 40%, #87051B 40%, #87051B 45%,transparent 45%,transparent 50%, #87051B 50%, #87051B 55%,transparent 55%,transparent 60%, #87051B 60%, #87051B 65%,transparent 65%,transparent 70%, #87051B 70%, #87051B 75%,transparent 70%,transparent 80%, #87051B 80%, #87051B 85%,transparent 85%,transparent 90%, #87051B 90%, #87051B 95%,transparent 95%);
+    background-size: 3em 3em;
+    background-color: #ffffff;
+    opacity: 1;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .premium-pringles1{
+     background-color: #cc2d45;
+ }
+
+.premium-pringles1 div img{
+  max-height: 280px;
+  max-width: 280px;
+  height: auto;
+  width: auto;
+}
+
+.premium-pringles2 div{
+    background: linear-gradient(45deg, #506070 0%, #506070 5%,transparent 5%, transparent 10%, #506070 10%, #506070 15%,transparent 15%,transparent 20%, #506070 20%, #506070 25%,transparent 25%,transparent 30%, #506070 30%, #506070 35%,transparent 35%,transparent 40%, #506070 40%, #506070 45%,transparent 45%,transparent 50%, #506070 50%, #506070 55%,transparent 55%,transparent 60%, #506070 60%, #506070 65%,transparent 65%,transparent 70%, #506070 70%, #506070 75%,transparent 70%,transparent 80%, #506070 80%, #506070 85%,transparent 85%,transparent 90%, #506070 90%, #506070 95%,transparent 95%);
+        background-size: 3em 3em;
+        background-color: #ffffff;
+        opacity: 1;
+    opacity: 1;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .premium-pringles2{
+     background-color: #233745;
+ }
+
+.premium-pringles2 div img{
+  max-height: 280px;
+  max-width: 280px;
+  height: auto;
+  width: auto;
+}
+
+/* Mega packs */
+.pack-lays1 div{
+    background-color: #fff;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .pack-lays1{
+     background-color: #ffc20a;
+ }
+
+.pack-lays1 div img{
+  max-height: 400px;
+  max-width: 400px;
+  height: auto;
+  width: auto;
+}
+
+.pack-lays2 div{
+    background-color: #fff;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .pack-lays2{
+     background-color: #ff221f;
+ }
+
+.pack-lays2 div img{
+  max-height: 400px;
+  max-width: 400px;
+  height: auto;
+  width: auto;
+}
+
+.pack-doritos1 div{
+    background-color: #fff;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .pack-doritos1{
+     background-color: #bf1b1b;
+ }
+
+.pack-doritos1 div img{
+  max-height: 260px;
+  max-width: 260px;
+  height: auto;
+  width: auto;
+}
+
+.pack-doritos2 div{
+    background-color: #fff;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .pack-doritos2{
+     background-color: #000005;
+ }
+
+.pack-doritos2 div img{
+  max-height: 260px;
+  max-width: 260px;
+  height: auto;
+  width: auto;
+}
+
+
+.pack-pringles div{
+    background-color: #fff;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .pack-pringles{
+     background-color: #c7243c;
+ }
+
+.pack-pringles div img{
+  max-height: 260px;
+  max-width: 260px;
+  height: auto;
+  width: auto;
+}
 /* Footer styles */
 footer {
     background-color: #ffffff;
@@ -776,3 +1020,4 @@ footer {
 .card-container::-webkit-scrollbar-thumb{
     background: #de662a;
  }
+ 
