@@ -43,6 +43,8 @@ app.post('/home', async(req,res)=>{
   const data=req.body;
 
    const products= await Product.find({});
+   
+   console.log(products);
  
   res.render("layouts/home.ejs",{data,products});
   
@@ -50,5 +52,6 @@ app.post('/home', async(req,res)=>{
 
   app.get('/cart',async (req,res)=>{
     const products= await Product.find({});
+    
     res.render("layouts/cart.ejs",{products});
   })
