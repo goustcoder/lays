@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const path = require('path');
 const mongoose = require('mongoose');
+engine = require('ejs-mate');
+app.engine('ejs', engine);
 
 app.use(express.urlencoded({extended:true}));
 app.set("view engine","ejs");
@@ -33,7 +35,7 @@ app.listen(port,()=>{
 })
 
 app.get('/', (req,res)=>{
-res.render("front.ejs");
+res.render("layouts/front.ejs");
 
 })
 
@@ -42,11 +44,11 @@ app.post('/home', async(req,res)=>{
 
    const products= await Product.find({});
  
-  res.render("home.ejs",{data,products});
+  res.render("layouts/home.ejs",{data,products});
   
   })
 
   app.get('/cart',async (req,res)=>{
     const products= await Product.find({});
-    res.render("cart.ejs",{products});
+    res.render("layouts/cart.ejs",{products});
   })

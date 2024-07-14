@@ -339,3 +339,71 @@ footer {
 .card:hover img {
     transform: scale(1.09);
 }
+
+.footer{
+    height: 220px;
+    width: 100%;
+    background: rgb(244,124,26);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-1st{
+    height: 55%;
+    width: 100%;
+    /* background-color: #fff; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cmt{
+    margin: 1rem 0 1.5rem 0;
+}
+.cmt p{
+    color: #fff;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.social-media span{
+    margin: 0 1rem 0 1rem;
+    height: 3rem;
+    width: 3rem;
+}
+.social-media a i{
+    font-size: 2rem;
+    color: #fff;
+    padding-bottom: 1rem;
+}
+.social-media a i:hover{
+    color: #449453;
+}
+.footer-2nd{
+    height: 45%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #f68f3b;
+}
+.footer-2nd div{
+    display: flex;
+    align-items: center;
+}
+.footer-2nd div ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.footer-2nd div ul li{
+    padding-left: 3rem;
+}
+.footer-2nd div ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: 0.5s;
+}
+.footer-2nd div ul li a:hover{
+   font-size: 1.2rem;
+}
