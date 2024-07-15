@@ -46,6 +46,13 @@ app.post('/home', async (req, res) => {
  res.render("layouts/home.ejs", { data, products });
 
 })
+app.get('/home', async (req, res) => {
+
+ const products = await Product.find({});
+ res.render("layouts/home.ejs", {  products });
+
+})
+
 
 app.get('/cart', async (req, res) => {
   const products = await Product.find({});
