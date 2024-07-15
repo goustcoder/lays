@@ -10,34 +10,13 @@
     <link rel="icon" type="image/png" sizes="16x16"
         href="https://i.imgur.com/fVH8fPA.png" referrerpolicy="no-referrer">
 </head>
+<%- include("../includes/nav.ejs") %>
+<p class="unique-text">Welcome <%=data.txt%></p>
+
 
 <body>
      <!-- Header section with logo and navigation -->
-    <header>
-        <div class="logo"><img src="https://i.imgur.com/fVH8fPA.png" referrerpolicy="no-referrer" alt="img"></div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Category</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <div class="box">
-                    <input type="text" placeholder="Search..">
-                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-                </div>
-                <li>
-                    <div class="cart">
-                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                     </div>
-                </li>
-                <li>
-                    <div class="cart profile">
-                        <a href="#"><i class="fa-solid fa-user"></i></a>
-                    </div>
-                </li>
-            </ul>  
-        </nav>
-    </header>
+    
     <!-- Hero Section with a slider -->
     
     <!-- Category section displaying products -->
@@ -72,56 +51,56 @@
             <!-- Each product card -->
             <div class="card yellow" id="l1">
                 <div>
-                   <img src="https://i.imgur.com/cZ3KNgt.png" referrerpolicy="no-referrer" alt="">
+                   <img src="<%=products[0].image%>" referrerpolicy="no-referrer" alt="">
                 </div>
-                <p>LAY'S® Cheddar & Sour Cream Flavored Potato Chips</p>
-                <button>Add to Cart</button> 
-                <a href="#">See Details</a>
+                <p><%=products[0].title%></p>
+                <button class="btn">Add to Cart</button> 
+                <a href="/show/<%=products[0]._id%>">See Details</a>
             </div>
 
             <div class="card bbq" id="l1">
                 <div>
-                   <img src="https://i.imgur.com/835ixzo.png" referrerpolicy="no-referrer" alt="">
+                   <img src="<%=products[1].image%>" referrerpolicy="no-referrer" alt="">
                 </div>
                 <p>LAY'S® BBQ Flavored Potato Chips</p>
-                <button>Add to Cart</button> 
-                <a href="#">See Details</a>
+                <button class="btn">Add to Cart</button> 
+                <a href="/show/<%=products[1]._id%>">See Details</a>
             </div>
 
             <div class="card red" id="l1">
                 <div>
-                   <img src="https://i.imgur.com/aVbkQOO.png" referrerpolicy="no-referrer" alt="">
+                   <img src="<%=products[2].image%>" referrerpolicy="no-referrer" alt="">
                 </div>
                 <p>LAY’S® Sweet & Spicy Honey Potato Chips</p>
-                <button>Add to Cart</button> 
-                <a href="#">See Details</a>
+              <button class="btn">Add to cart</button>
+                <a href="/show/<%=products[2]._id%>">See Details</a>
             </div>
 
             <div class="card sky" id="l1">
                 <div>
-                   <img src="https://i.imgur.com/1Z32j1F.png" referrerpolicy="no-referrer" alt="">
+                   <img src="<%=products[3].image%>" referrerpolicy="no-referrer" alt="">
                 </div>
                 <p>LAY'S® Salt & Vinegar Flavored Potato Chips</p>
-                <button>Add to Cart</button> 
-                <a href="#">See Details</a>
+              <button class="btn">Add to cart</button>
+                <a href="/show/<%=products[3]._id%>">See Details</a>
             </div>
 
             <div class="card yellow green" id="l1">
                 <div>
-                   <img src="https://i.imgur.com/90XEg1G.png" referrerpolicy="no-referrer" alt="">
+                   <img src="<%=products[4].image%>" referrerpolicy="no-referrer" alt="">
                 </div>
                 <p>LAY'S® Sour Cream & Onion Flavored Potato Chips</p>
                 <button>Add to Cart</button> 
-                <a href="#">See Details</a>
+                <a href="/show/<%=products[4]._id%>">See Details</a>
             </div>
 
             <div class="card yellow green" id="l1">
                 <div>
-                   <img src="https://i.imgur.com/90XEg1G.png" referrerpolicy="no-referrer" alt="">
+                   <img src="<%=products[5].image%>" referrerpolicy="no-referrer" alt="">
                 </div>
                 <p>LAY'S® Sour Cream & Onion Flavored Potato Chips</p>
                 <button>Add to Cart</button> 
-                <a href="#">See Details</a>
+                <a href="/show/<%=products[5]._id%>">See Details</a>
             </div>
             
         </div>
@@ -135,11 +114,11 @@
             <!-- Each product card -->
             <div class="card pringles-red" id="l1">
                 <div>
-                   <img src="https://i.imgur.com/5pGDYn5.png" referrerpolicy="no-referrer" alt="">
+                   <img src="<%=products[6].image%>" referrerpolicy="no-referrer" alt="">
                 </div>
                 <div class="paragraph"><p>PRINGLES® ORIGINAL CRISPS </p></div>
                 <button>Add to Cart</button> 
-                <a href="#">See Details</a>
+                <a href="/show/<%=products[6]._id%>">See Details</a>
             </div>
 
             <div class="card pringles-bbq" id="l1">
@@ -150,7 +129,7 @@
                     <p>PRINGLES® BBQ CRISPS</p>
                 </div>
                 <button>Add to Cart</button> 
-                <a href="#">See Details</a>
+                <a href="/show/<%=products[7]._id%>">See Details</a>
             </div>
 
             <div class="card pringles-green" id="l1">
@@ -162,7 +141,7 @@
                 </div>
                 
                 <button>Add to Cart</button> 
-                <a href="#">See Details</a>
+                <a href="/show/<%=products[8]._id%>">See Details</a>
             </div>
 
 
@@ -175,7 +154,7 @@
                  </div>
                
                 <button>Add to Cart</button> 
-                <a href="#">See Details</a>
+                <a href="/show/<%=products[9]._id%>">See Details</a>
             </div>
 
             <div class="card pringles-white" id="l1">
@@ -186,7 +165,7 @@
                     <p>PRINGLES® PIZZA CRISPS</p>
                 </div>
                 <button>Add to Cart</button> 
-                <a href="#">See Details</a>
+                <a href="/show/<%=products[10]._id%>">See Details</a>
             </div>
 
             <div class="card pringles-yellow" id="l1">
@@ -197,7 +176,7 @@
                     <p>PRINGLES® CHEDDAR CHEESE CRISPS</p>
                 </div>
                 <button>Add to Cart</button> 
-                <a href="#">See Details</a>
+                <a href="/show/<%=products[11]._id%>">See Details</a>
             </div>
             
         </div>
@@ -213,7 +192,7 @@
             </div>
             <p>LAY'S® Wavy Original Potato Chips</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[12]._id%>">See Details</a>
         </div>
 
         <div class="card wavy-bbq" id="l1">
@@ -222,7 +201,7 @@
             </div>
             <p>LAY'S® Wavy Hickory BBQ Flavored Potato Chips</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[13]._id%>">See Details</a>
         </div>
 
         <div class="card wavy-dark" id="l1">
@@ -231,7 +210,7 @@
             </div>
             <p>LAY'S® Wavy Ranch Flavored Potato Chips</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[14]._id%>">See Details</a>
         </div>
 
        
@@ -242,7 +221,7 @@
             </div>
             <p>LAY'S® Wavy Lightly Salted Potato Chips</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[15]._id%>">See Details</a>
         </div>
 
         <div class="card wavy-white" id="l1">
@@ -251,7 +230,7 @@
             </div>
             <p>LAY'S® Wavy Salt & Pepper Flavored Potato Chips</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[16]._id%>">See Details</a>
         </div>
         
     </div>
@@ -269,7 +248,7 @@
             </div>
             <p>DORITOS® Nacho Cheese Flavored Tortilla Chips</p>
             <button>Add to Cart</button>
-            <a href="#">See Details</a> 
+            <a href="/show/<%=products[17]._id%>">See Details</a> 
         </div>
 
         <div class="card doritos-bbq" id="l1">
@@ -278,7 +257,7 @@
             </div>
             <p>DORITOS® SWEET & TANGY BBQ</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[18]._id%>">See Details</a>
         </div>
 
         <div class="card doritos-blue" id="l1">
@@ -287,7 +266,7 @@
             </div>
             <p>DORITOS® COOL RANCH® Flavored Tortilla Chips</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[19]._id%>">See Details</a>
         </div>
 
         <div class="card doritos-green" id="l1">
@@ -296,7 +275,7 @@
             </div>
             <p>DORITOS® Salsa Verde Flavored Tortilla Chips</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[20]._id%>">See Details</a>
         </div>
 
         <div class="card doritos-spicy" id="l1">
@@ -305,7 +284,7 @@
             </div>
             <p>DORITOS® Spicy Nacho Flavored Tortilla Chips</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[21]._id%>">See Details</a>
         </div>
 
         <div class="card doritos-chili" id="l1">
@@ -314,7 +293,7 @@
             </div>
             <p>DORITOS® Spicy Sweet Chili Flavored Tortilla Chips</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[22]._id%>">See Details</a>
         </div>
         
     </div>
@@ -333,7 +312,7 @@
             </div>
             <p> DORITOS® FLAMIN' HOT® Nacho Flavored Tortilla Chips</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[23]._id%>">See Details</a>
         </div>
 
         <div class="card doritos-new-blue" id="l1">
@@ -342,7 +321,7 @@
             </div>
             <p>DORITOS® FLAMIN' HOT® COOL RANCH®</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[24]._id%>">See Details</a>
         </div>
 
         <div class="card doritos-new-green" id="l1">
@@ -351,7 +330,7 @@
             </div>
             <p> DORITOS® FLAMIN' HOT® Limón Flavored Tortilla Chips</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[25]._id%>">See Details</a>
         </div>
         <!-- lays kettle -->
         <div class="card lays-kettle-red" id="l1">
@@ -360,7 +339,7 @@
             </div>
             <p>LAY'S® Kettle Cooked Flamin’ super Hot</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[26]._id%>">See Details</a>
         </div>
 
         <div class="card lays-kettle-green" id="l1">
@@ -369,7 +348,7 @@
             </div>
             <p>LAY'S® Kettle Cooked Jalapeño Flavored Potato Chips</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[27]._id%>">See Details</a>
         </div>
 
         <div class="card lays-kettle-white" id="l1">
@@ -378,7 +357,7 @@
             </div>
             <p>LAY'S® Kettle Cooked Sea Salt & Cracked Pepper Flavored Potato Chips</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[28]._id%>">See Details</a>
         </div>
 
         <!--Ruffles -->
@@ -389,7 +368,7 @@
             </div>
             <p>RUFFLES® FLAMIN' HOT CHEDDAR & SOUR CREAM</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[29]._id%>">See Details</a>
         </div>
 
         <div class="card ruffles-bbq" id="l1">
@@ -398,7 +377,7 @@
             </div>
             <p>RUFFLES® FLAMIN' HOT BBQ & CHILI</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[30]._id%>">See Details</a>
         </div>
 
         <div class="card ruffles-green" id="l1">
@@ -407,7 +386,7 @@
             </div>
             <p>RUFFLES® JALAPEÑO RANCH FLAVORED POTATO CHIPS</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[31]._id%>">See Details</a>
         </div>
 
         <!-- sunchips -->
@@ -418,7 +397,7 @@
             </div>
             <p>SUNCHIPS® harvest cheddar flavored whole grain snacks</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[32]._id%>">See Details</a>
         </div>
 
         <div class="card sunchips-green" id="l1">
@@ -427,7 +406,7 @@
             </div>
             <p>SUNCHIPS® french onion flavored whole grain snacks</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[33]._id%>">See Details</a>
         </div>
         
     </div>
@@ -443,7 +422,7 @@
             </div>
             <p>LAY’S® Gourmet Chips Black Editon</p>
             <button>Add to Cart</button>
-            <a href="#">See Details</a> 
+            <a href="/show/<%=products[34]._id%>">See Details</a> 
         </div>
 
         <div class="card premium-red" id="l1">
@@ -452,7 +431,7 @@
             </div>
             <p>LAY’S® Gourmet Chips Red and Spicy Editon</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[35]._id%>">See Details</a>
         </div>
 
         <div class="card premium-kfc" id="l1">
@@ -461,7 +440,7 @@
             </div>
             <p>LAY’S® iconic KFC crunchy chicken Editon </p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[36]._id%>">See Details</a>
         </div>
 
         <div class="card premium-doritos" id="l1">
@@ -470,7 +449,7 @@
             </div>
             <p>DORITOS'S Dipass italaian Cheese Chips</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[37]._id%>">See Details</a>
         </div>
 
         <div class="card premium-pringles1" id="l1">
@@ -479,7 +458,7 @@
             </div>
             <p>PRINGLES MINECRAFT Spicy TNT Crisps</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[38]._id%>">See Details</a>
         </div>
 
         <div class="card premium-pringles2" id="l1">
@@ -488,7 +467,7 @@
             </div>
             <p>PRINGLES Bourbon BBQ with extra Spicy Crisps</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[39]._id%>">See Details</a>
         </div>
         
     </div>
@@ -504,7 +483,7 @@
             </div>
             <p>LAY'S® Classic Potato Chips 10 Multi-Pack</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[40]._id%>">See Details</a>
         </div>
 
         <div class="card pack-lays2" id="l1">
@@ -513,7 +492,7 @@
             </div>
             <p>LAY'S® Mix 10 Potato Chips Multi-Variety Pack</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[41]._id%>">See Details</a>
         </div>
 
         <div class="card pack-doritos1" id="l1">
@@ -522,7 +501,7 @@
             </div>
             <p>DORITOS® Nacho Cheese Flavored Chips 10 Multi-Pack</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[42]._id%>">See Details</a>
         </div>
 
         <div class="card pack-doritos2" id="l1">
@@ -531,7 +510,7 @@
             </div>
             <p>DORITOS® Multiple Flavored Mix Variety Pack</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[43]._id%>">See Details</a>
         </div>
 
         <div class="card pack-pringles" id="l1">
@@ -540,7 +519,7 @@
             </div>
             <p>PRINGLES® GRAB & GO MULTIPACK 3 CRISP FLAVORS</p>
             <button>Add to Cart</button> 
-            <a href="#">See Details</a>
+            <a href="/show/<%=products[43]._id%>">See Details</a>
         </div>
         
     </div>
@@ -552,9 +531,9 @@
         <div class="footer-1st">
             <div class="cmt"><p>Let's take it to the next level. Follow us. </p></div>
             <div class="social-media">
-                <span><a href="#"><i class="fa-brands fa-x-twitter"></i></a></span>
-                <span><a href="#"><i class="fa-brands fa-facebook"></i></a></span>
-                <span><a href="#"><i class="fa-brands fa-instagram"></i></a></span>
+                <span><a href="/show/<%=products[0]._id%>"><i class="fa-brands fa-x-twitter"></i></a></span>
+                <span><a href="/show/<%=products[0]._id%>"><i class="fa-brands fa-facebook"></i></a></span>
+                <span><a href="/show/<%=products[0]._id%>"><i class="fa-brands fa-instagram"></i></a></span>
             </div>
         </div>
         <div class="footer-2nd">
@@ -572,40 +551,9 @@
 
 
 
-    <script>
-        const slides = document.querySelectorAll(".slide");
-    const pre=document.querySelector(".pre");
-    const post=document.querySelector(".post");
-    let counter =0;
-    slides.forEach((slide,index)=>{
-      slide.style.left=`${index *100}%`;
-    })
-    pre.addEventListener("click",()=>{
-        counter--;
-        slideImage();
-        console.log("clicked",counter);
-    })
-    post.addEventListener("click",()=>{
-        counter++;
-        slideImage();
-        console.log("clicked");
-        console.log("clicked",counter);
-    })
-     const slideImage=()=>{
-        slides.forEach((slide)=>{
-            if(counter>=7){
-                counter=0;
-            }else if(counter<0){
-              counter=6;
-            }
-            slide.style. transform=`translateX(-${counter*100}%)`
-        })
-     }
-     window.setInterval(()=>{
-        counter++;
-      slideImage()
-     },4000);
-    </script>   
+     <script src="/cart.js"></script>
+     <script src="/home.js"></script>
+   
 </body>
 
 </html>
