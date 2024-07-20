@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrunchyHub: Where Every Bite is a Delight!</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://i.imgur.com/fVH8fPA.png" referrerpolicy="no-referrer">
+</head>
+<%- include("../includes/nav.ejs") %>
+
+
+
+<body>
+     <!-- Header section with logo and navigation -->
+    
+    <!-- Hero Section with a slider -->
+    
+    <!-- Category section displaying products -->
+<!-- hero section -->
+<div class="slider">
+    <img src="https://ideogram.ai/assets/image/lossless/response/hz2DQXNoQlm9xoSw6snw2A" alt="" class="slide">
+    <img src="https://ideogram.ai/assets/image/lossless/response/WCigYi3tQ4OTy-OyA5Ftow" alt="" class="slide">
+    <img src="https://ideogram.ai/assets/image/lossless/response/dOFsQpT8SyeJzQG0RDiKpg" alt="" class="slide">
+    <img src="https://ideogram.ai/assets/image/lossless/response/zPda0YZEQsy7Spv6Pyyh1w" alt="" class="slide">
+    <img src="https://ideogram.ai/assets/image/lossless/response/KQV2bivqRDKSM26vXnX_Jg" alt="" class="slide">
+    <img src="https://ideogram.ai/assets/progressive-image/balanced/response/cCn-sG7LTXqmt-vm31EVOg" alt="" class="slide">
+    <img src="https://ideogram.ai/assets/progressive-image/balanced/response/UXwg5QPaS5G9JXUzEHb-Ig" alt="" class="slide">
+    
+  </div>
+  <button class="pre g">
+      <i class="fa-solid fa-angle-left"></i>
+  </button>
+  <button class="post g">
+      <i class="fa-solid fa-angle-right"></i>
+  </button>
+  </div> 
+
+
+
+
+
+
+
+    <section class="category">
+        <h2>Lays Section</h2>
+        <div class="card-container">
+            <!-- Each product card -->
+            <div class="card yellow" id="l1">
+                <div>
+                   <img src="<%=products[0].image%>" referrerpolicy="no-referrer" alt="">
+                </div>
+                <p><%=products[0].title%></p>
+                <button class="btn">Add to Cart</button> 
+                <a href="/show/<%=products[0]._id%>">See Details</a>
+            </div>
+
+            <div class="card bbq" id="l1">
+                <div>
+                   <img src="<%=products[1].image%>" referrerpolicy="no-referrer" alt="">
+                </div>
+                <p>LAY'S® BBQ Flavored Potato Chips</p>
+                <button class="btn">Add to Cart</button> 
+                <a href="/show/<%=products[1]._id%>">See Details</a>
+            </div>
+
+            <div class="card red" id="l1">
+                <div>
+                   <img src="<%=products[2].image%>" referrerpolicy="no-referrer" alt="">
+                </div>
+                <p>LAY’S® Sweet & Spicy Honey Potato Chips</p>
+              <button class="btn">Add to cart</button>
+                <a href="/show/<%=products[2]._id%>">See Details</a>
+            </div>
+
+            <div class="card sky" id="l1">
+                <div>
+                   <img src="<%=products[3].image%>" referrerpolicy="no-referrer" alt="">
+                </div>
+                <p>LAY'S® Salt & Vinegar Flavored Potato Chips</p>
+              <button class="btn">Add to cart</button>
+                <a href="/show/<%=products[3]._id%>">See Details</a>
+            </div>
+
+            <div class="card yellow green" id="l1">
+                <div>
+                   <img src="<%=products[4].image%>" referrerpolicy="no-referrer" alt="">
+                </div>
+                <p>LAY'S® Sour Cream & Onion Flavored Potato Chips</p>
+                <button>Add to Cart</button> 
+                <a href="/show/<%=products[4]._id%>">See Details</a>
+            </div>
+
+            <div class="card yellow green" id="l1">
+                <div>
+                   <img src="<%=products[5].image%>" referrerpolicy="no-referrer" alt="">
+                </div>
+                <p>LAY'S® Sour Cream & Onion Flavored Potato Chips</p>
+                <button>Add to Cart</button> 
+                <a href="/show/<%=products[5]._id%>">See Details</a>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <!-- Pringles  -->
+    <section class="category">
+        <h2>Pringles Section</h2>
+        <div class="card-container">
+            <!-- Each product card -->
+            <div class="card pringles-red" id="l1">
+                <div>
+                   <img src="<%=products[6].image%>" referrerpolicy="no-referrer" alt="">
+                </div>
+                <div class="paragraph"><p>PRINGLES® ORIGINAL CRISPS </p></div>
+                <button>Add to Cart</button> 
+                <a href="/show/<%=products[6]._id%>">See Details</a>
+            </div>
+
+            <div class="card pringles-bbq" id="l1">
+                <div>
+                   <img src="https://i.imgur.com/5En4H12.png" referrerpolicy="no-referrer" alt="">
+                </div>
+                <div class="paragraph">
+                    <p>PRINGLES® BBQ CRISPS</p>
+                </div>
+                <button>Add to Cart</button> 
+                <a href="/show/<%=products[7]._id%>">See Details</a>
+            </div>
+
+            <div class="card pringles-green" id="l1">
+                <div>
+                   <img src="https://i.imgur.com/E8vSo3u.png" referrerpolicy="no-referrer" alt="">
+                </div>
+                <div class="paragraph">
+                    <p>PRINGLES® SOUR CREAM & ONION CRISPS</p>
+                </div>
+                
+                <button>Add to Cart</button> 
+                <a href="/show/<%=products[8]._id%>">See Details</a>
+            </div>
+
+
+            <div class="card pringles-sky" id="l1">
+                <div>
+                   <img src="https://i.imgur.com/pWbWFHe.png" referrerpolicy="no-referrer" alt="">
+                </div>
+                <div class="paragraph">
+                    <p>PRINGLES® CHEDDAR & SOUR CREAM CRISPS</p>
+                 </div>
+               
+                <button>Add to Cart</button> 
+                <a href="/show/<%=products[9]._id%>">See Details</a>
+            </div>
+
+            <div class="card pringles-white" id="l1">
+                <div>
+                   <img src="https://i.imgur.com/SfOVoE1.png" referrerpolicy="no-referrer" alt="">
+                </div>
+                <div class="paragraph">
+                    <p>PRINGLES® PIZZA CRISPS</p>
+                </div>
+                <button>Add to Cart</button> 
+                <a href="/show/<%=products[10]._id%>">See Details</a>
+            </div>
+
+            <div class="card pringles-yellow" id="l1">
+                <div>
+                   <img src="https://i.imgur.com/2QYjUAJ.png" referrerpolicy="no-referrer" alt="">
+                </div>
+                <div class="paragraph">
+                    <p>PRINGLES® CHEDDAR CHEESE CRISPS</p>
+                </div>
+                <button>Add to Cart</button> 
+                <a href="/show/<%=products[11]._id%>">See Details</a>
+            </div>
+            
+        </div>
+    </section>
+ <!-- lays wavy section -->
+ <section class="category">
+    <h2>Lays wavy section</h2>
+    <div class="card-container">
+        <!-- Each product card -->
+        <div class="card wavy-red" id="l1">
+            <div>
+               <img src="https://i.imgur.com/saXdj27.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>LAY'S® Wavy Original Potato Chips</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[12]._id%>">See Details</a>
+        </div>
+
+        <div class="card wavy-bbq" id="l1">
+            <div>
+               <img src="https://i.imgur.com/9Lpibh1.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>LAY'S® Wavy Hickory BBQ Flavored Potato Chips</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[13]._id%>">See Details</a>
+        </div>
+
+        <div class="card wavy-dark" id="l1">
+            <div>
+               <img src="https://i.imgur.com/ac6is8r.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>LAY'S® Wavy Ranch Flavored Potato Chips</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[14]._id%>">See Details</a>
+        </div>
+
+       
+
+        <div class="card wavy-sky" id="l1">
+            <div>
+               <img src="https://i.imgur.com/3oV0LQ6.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>LAY'S® Wavy Lightly Salted Potato Chips</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[15]._id%>">See Details</a>
+        </div>
+
+        <div class="card wavy-white" id="l1">
+            <div>
+               <img src="https://i.imgur.com/c5sM7vY.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>LAY'S® Wavy Salt & Pepper Flavored Potato Chips</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[16]._id%>">See Details</a>
+        </div>
+        
+    </div>
+</section>
+
+<!-- doritos sections -->
+
+<section class="category">
+    <h2>Doritos section</h2>
+    <div class="card-container">
+        <!-- Each product card -->
+        <div class="card doritos-red" id="l1">
+            <div>
+               <img src="https://i.imgur.com/E6o73gK.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>DORITOS® Nacho Cheese Flavored Tortilla Chips</p>
+            <button>Add to Cart</button>
+            <a href="/show/<%=products[17]._id%>">See Details</a> 
+        </div>
+
+        <div class="card doritos-bbq" id="l1">
+            <div>
+               <img src="https://i.imgur.com/vEPYfrB.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>DORITOS® SWEET & TANGY BBQ</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[18]._id%>">See Details</a>
+        </div>
+
+        <div class="card doritos-blue" id="l1">
+            <div>
+               <img src="https://i.imgur.com/7R38mXV.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>DORITOS® COOL RANCH® Flavored Tortilla Chips</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[19]._id%>">See Details</a>
+        </div>
+
+        <div class="card doritos-green" id="l1">
+            <div>
+               <img src="https://i.imgur.com/805w3d4.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>DORITOS® Salsa Verde Flavored Tortilla Chips</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[20]._id%>">See Details</a>
+        </div>
+
+        <div class="card doritos-spicy" id="l1">
+            <div>
+               <img src="https://i.imgur.com/8UjIlZc.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>DORITOS® Spicy Nacho Flavored Tortilla Chips</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[21]._id%>">See Details</a>
+        </div>
+
+        <div class="card doritos-chili" id="l1">
+            <div>
+               <img src="https://i.imgur.com/1lX1ZfA.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>DORITOS® Spicy Sweet Chili Flavored Tortilla Chips</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[22]._id%>">See Details</a>
+        </div>
+        
+    </div>
+</section>
+<!-- try out these -->
+<section class="category">
+    <h2>Try out these</h2>
+    <div class="card-container">
+        <!-- Each product card -->
+
+
+         <!-- new doritos -->
+        <div class="card doritos-new-red" id="l1">
+            <div>
+               <img src="https://i.imgur.com/mxts7Ud.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p> DORITOS® FLAMIN' HOT® Nacho Flavored Tortilla Chips</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[23]._id%>">See Details</a>
+        </div>
+
+        <div class="card doritos-new-blue" id="l1">
+            <div>
+               <img src="https://i.imgur.com/6qkL9tx.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>DORITOS® FLAMIN' HOT® COOL RANCH®</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[24]._id%>">See Details</a>
+        </div>
+
+        <div class="card doritos-new-green" id="l1">
+            <div>
+               <img src="https://i.imgur.com/J8LptBN.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p> DORITOS® FLAMIN' HOT® Limón Flavored Tortilla Chips</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[25]._id%>">See Details</a>
+        </div>
+        <!-- lays kettle -->
+        <div class="card lays-kettle-red" id="l1">
+            <div>
+               <img src="https://i.imgur.com/iNFhJv9.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>LAY'S® Kettle Cooked Flamin’ super Hot</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[26]._id%>">See Details</a>
+        </div>
+
+        <div class="card lays-kettle-green" id="l1">
+            <div>
+               <img src="https://i.imgur.com/m8a7FYZ.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>LAY'S® Kettle Cooked Jalapeño Flavored Potato Chips</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[27]._id%>">See Details</a>
+        </div>
+
+        <div class="card lays-kettle-white" id="l1">
+            <div>
+               <img src="https://i.imgur.com/NPIMaTd.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>LAY'S® Kettle Cooked Sea Salt & Cracked Pepper Flavored Potato Chips</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[28]._id%>">See Details</a>
+        </div>
+
+        <!--Ruffles -->
+
+        <div class="card ruffles-org" id="l1">
+            <div>
+               <img src="https://i.imgur.com/8dTLDGg.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>RUFFLES® FLAMIN' HOT CHEDDAR & SOUR CREAM</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[29]._id%>">See Details</a>
+        </div>
+
+        <div class="card ruffles-bbq" id="l1">
+            <div>
+               <img src="https://i.imgur.com/UeqVFYB.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>RUFFLES® FLAMIN' HOT BBQ & CHILI</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[30]._id%>">See Details</a>
+        </div>
+
+        <div class="card ruffles-green" id="l1">
+            <div>
+               <img src="https://i.imgur.com/CeOwCgA.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>RUFFLES® JALAPEÑO RANCH FLAVORED POTATO CHIPS</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[31]._id%>">See Details</a>
+        </div>
+
+        <!-- sunchips -->
+
+        <div class="card sunchips-orange" id="l1">
+            <div>
+               <img src="https://i.imgur.com/p587zqx.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>SUNCHIPS® harvest cheddar flavored whole grain snacks</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[32]._id%>">See Details</a>
+        </div>
+
+        <div class="card sunchips-green" id="l1">
+            <div>
+               <img src="https://i.imgur.com/XdUrppU.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>SUNCHIPS® french onion flavored whole grain snacks</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[33]._id%>">See Details</a>
+        </div>
+        
+    </div>
+</section>
+<!-- festive editon-->
+<section class="category">
+    <h2>Festive Editon</h2>
+    <div class="card-container">
+        <!-- Each product card -->
+        <div class="card premium-black" id="l1">
+            <div>
+               <img src="https://i.imgur.com/sxkWtVo.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>LAY’S® Gourmet Chips Black Editon</p>
+            <button>Add to Cart</button>
+            <a href="/show/<%=products[34]._id%>">See Details</a> 
+        </div>
+
+        <div class="card premium-red" id="l1">
+            <div>
+               <img src="https://i.imgur.com/kySg8cN.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>LAY’S® Gourmet Chips Red and Spicy Editon</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[35]._id%>">See Details</a>
+        </div>
+
+        <div class="card premium-kfc" id="l1">
+            <div>
+               <img src="https://i.imgur.com/GHzdrIa.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>LAY’S® iconic KFC crunchy chicken Editon </p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[36]._id%>">See Details</a>
+        </div>
+
+        <div class="card premium-doritos" id="l1">
+            <div>
+               <img src="https://i.imgur.com/Glch1MK.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>DORITOS'S Dipass italaian Cheese Chips</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[37]._id%>">See Details</a>
+        </div>
+
+        <div class="card premium-pringles1" id="l1">
+            <div>
+               <img src="https://i.imgur.com/YRcxCEH.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>PRINGLES MINECRAFT Spicy TNT Crisps</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[38]._id%>">See Details</a>
+        </div>
+
+        <div class="card premium-pringles2" id="l1">
+            <div>
+               <img src="https://i.imgur.com/l4cjOyy.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>PRINGLES Bourbon BBQ with extra Spicy Crisps</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[39]._id%>">See Details</a>
+        </div>
+        
+    </div>
+</section>
+<!-- multiple packs -->
+<section class="category">
+    <h2>pack of 5</h2>
+    <div class="card-container">
+        <!-- Each product card -->
+        <div class="card pack-lays1" id="l1">
+            <div>
+               <img src="https://i.imgur.com/5QHbRKQ.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>LAY'S® Classic Potato Chips 10 Multi-Pack</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[40]._id%>">See Details</a>
+        </div>
+
+        <div class="card pack-lays2" id="l1">
+            <div>
+               <img src="https://i.imgur.com/pVMMlk0.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>LAY'S® Mix 10 Potato Chips Multi-Variety Pack</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[41]._id%>">See Details</a>
+        </div>
+
+        <div class="card pack-doritos1" id="l1">
+            <div>
+               <img src="https://i.imgur.com/IRevygd.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>DORITOS® Nacho Cheese Flavored Chips 10 Multi-Pack</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[42]._id%>">See Details</a>
+        </div>
+
+        <div class="card pack-doritos2" id="l1">
+            <div>
+               <img src="https://i.imgur.com/iEnZF3T.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>DORITOS® Multiple Flavored Mix Variety Pack</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[43]._id%>">See Details</a>
+        </div>
+
+        <div class="card pack-pringles" id="l1">
+            <div>
+               <img src="https://i.imgur.com/vt0jBR0.png" referrerpolicy="no-referrer" alt="">
+            </div>
+            <p>PRINGLES® GRAB & GO MULTIPACK 3 CRISP FLAVORS</p>
+            <button>Add to Cart</button> 
+            <a href="/show/<%=products[43]._id%>">See Details</a>
+        </div>
+        
+    </div>
+</section>
+
+    
+    <!-- Footer section -->
+    <div class="footer">
+        <div class="footer-1st">
+            <div class="cmt"><p>Let's take it to the next level. Follow us. </p></div>
+            <div class="social-media">
+                <span><a href="/show/<%=products[0]._id%>"><i class="fa-brands fa-x-twitter"></i></a></span>
+                <span><a href="/show/<%=products[0]._id%>"><i class="fa-brands fa-facebook"></i></a></span>
+                <span><a href="/show/<%=products[0]._id%>"><i class="fa-brands fa-instagram"></i></a></span>
+            </div>
+        </div>
+        <div class="footer-2nd">
+            <div>
+                <ul>
+                    <li><a href="">CONTACT US</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">PRIVACY POLICY</a></li>
+                    <li><a href="">COOKIE PREFERENCES</a></li>
+                    <li><a href="">ACCESSBILITY STATEMENT</a></li>
+                </ul>
+            </div>
+        </div>
+     </div>
+
+
+
+     <script src="/cart.js"></script>
+     <script src="/home.js"></script>
+   
+</body>
+
+</html>

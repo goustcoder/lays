@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/show.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://i.imgur.com/fVH8fPA.png" referrerpolicy="no-referrer">
+        <title>CrunchyHub: Where Every Bite is a Delight!</title>
+</head>
+<%- include("../includes/nav.ejs") %>
+<body>
+    
+        <div class="card">
+            <img src="<%=products.image%>" alt="LAY’S® Gourmet Chips Black Edition" class="product-image">
+            <div class="card-content">
+                <h1 class="title"><%=products.title%></h1>
+                <p class="description"><%=products.description%></p>
+                <p class="price">$<%=products.price%></p>
+                <p class="flavour"><strong>Flavour:</strong> <%=products.flavour%></p>
+                <p class="recipe"><strong>Recipe:</strong> <%=products.recipe%></p>
+                <p class="ingredient"><strong>Ingredients:</strong> <%=products.ingredient%></p>
+                <div class="button-group">
+                    <a href="#" class="button order-now btn">Order Now</a>
+                    <a href="javascript:history.back()" class="button back">Back</a>
+                </div>
+            </div>
+        
+    
+            <script src="/cart.js"></script>
+</body>
+</html>
